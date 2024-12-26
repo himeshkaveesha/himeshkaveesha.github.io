@@ -45,7 +45,7 @@ html {
 
 body {
   font-family: 'PT Sans', sans-serif;
-  background: linear-gradient(135deg, rgba(29, 161, 242, 0.5), rgba(29, 161, 242, 0.9));
+  background: linear-gradient(135deg, rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0.9));
   padding: 20px;
 }
 
