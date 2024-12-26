@@ -218,9 +218,9 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 10px 100px -5px #917b8b;
+  box-shadow: 0 10px 100px -5px #eee;
   z-index: 1000;
-  background: #3c086d;
+  background: #fff;
 }
 
 .main-header__logo-container {
