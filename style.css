@@ -405,6 +405,9 @@ a {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
+  background: url('https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable */
 }
 
 .home-hero__content {
