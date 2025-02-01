@@ -2,303 +2,633 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-  <title>Vihen Theekshadha</title>
-  <meta name="description" content="Vihen Theekshadha - Oracle APEX Developer" />
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vihen Theekshadha-Himesh</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body>
-  <header class="main-header">
-    <div class="main-header__logo-container">
-      <div class="main-header__logo-img-cont">
-        <img
-          src="./assets/forprofile.jpeg"
-          alt="logo Image" class="main-header__logo-img" />
-      </div>
-      <h4 class="main-header__logo-text">Vihen Theekshadha</h4>
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
     </div>
-    <nav class="main-header__navigation">
-      <ul class="main-header__navigation-links">
-        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
-        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> My work Life </a>
-        </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Vihen Theekshadha</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/himesh-kaveesha-kariyawasam-1b791b206/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://web.facebook.com/himesh.kaveesha/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/__himesh_kaveesha__/" class="instagram"><i class="bi bi-instagram"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
-    <div class="main-header__sm-scr-nav-btn">
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-    </div>
-    <div class="main-header__sm-menu">
-      <div class="main-header__sm-menu-close">
 
-      </div>
-      <ul class="main-header__sm-menu-links">
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
-        </li>
-
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">My work Life</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
   </header>
 
+  <main class="main">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
 
-  <section id="home-hero" class="home-hero">
-    <div class="home-hero__content">
-      <div class="home-hero__info">
-        <h1 class="heading-primary home-hero__heading-primary">
-          <span class="heading-primary__sm"> Hello 👋</span>
-          <span class="heading-primary__main">
-          I'm Vihen Theekshadha, an Oracle APEX Developer. I build user-friendly and efficient web applications.</span>
-        </h1>
-        <button class="btn btn-theme home-hero__btn-theme">
-          <a href="https://drive.google.com/uc?export=download&id=1AaHueQTftj2MDILO5Su_xMYda8Fx-ENC" download="your_resume_name.pdf">Download Resume</a>
-        </button>
-        </div>
-    </div>
-  </section>
-  <section id="about" class="about main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> About 🧑‍💻</span>
-        <span class="heading-secondary__main">
-          Here you will find more information about me and what I do.
-      </h2>
-      <div class="main-section__content">
-        <div class="about__info">
-          <div class="about__main-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Story
-            </h3>
-            <p class="text-primary about__text-primary">
-              <span>
-                My fascination with computers began early on, fostering a natural affinity for technology. After completing high school, I embarked on a journey of professional growth by joining a tech company. This provided me with an invaluable opportunity to learn from industry leaders, gaining expertise in MSSQL and Oracle databases. Driven by a thirst for knowledge, I delved into the world of Oracle APEX, mastering its intricacies and achieving professional certification. This journey has instilled in me a deep understanding of database technologies and a passion for developing innovative and impactful solutions.
-              </span>
-              <span>
-                I was drawn to Oracle APEX by its remarkable versatility, ease of use, and the impressive speed at which applications can be developed. However, my initial journey presented challenges, primarily due to limited readily available support and a smaller community compared to other development platforms. This necessitated a significant amount of independent research and experimentation to overcome obstacles and gain proficiency. Through persistent effort and a proactive approach to problem-solving, I have cultivated a strong understanding of Oracle APEX and now confidently leverage its capabilities to deliver impactful solutions.
-              </span>
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Vihen Theekshadha</h2>
+        <p>I'm <span class="typed" data-typed-items="a Oracle Apex Developer.,a Oracle cloud administrator.,also known as Himesh.">a Oracle Apex Developer.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Experienced Oracle APEX Developer with Multiple years of expertise in designing and developing web applications for diverse industries, including insurance, healthcare, utilities, and analytics. Adept at leading teams, managing project timelines, and delivering cost-effective, high-quality applications on time. Proven track record in integrating enterprise solutions with Oracle APEX and offering advanced features like multi-factor authentication (MFA) and secure PowerBI integration. Recognized for rapid learning, adaptability, and staying current with Oracle APEX trends.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Oracle APEX developer &amp; Cloud administrator.</h2>
+            <p class="fst-italic py-3">
+              I'm Vihen Theekshadha, an Oracle APEX Developer. I build user-friendly and efficient web applications.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Other Names:</strong> <span>Himesh Kaveesha</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>24 February 2002</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>himeshkaveesha.github.io</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kahathuduwa, Sri Lanka</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+94 77 863 0116</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Himeshkaveesha2002@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              My fascination with computers began early on, fostering a natural affinity for technology. After completing high school, I embarked on a journey of professional growth by joining a tech company. This provided me with an invaluable opportunity to learn from industry leaders, gaining expertise in MSSQL and Oracle databases. Driven by a thirst for knowledge, I delved into the world of Oracle APEX, mastering its intricacies and achieving professional certification. This journey has instilled in me a deep understanding of database technologies and a passion for developing innovative and impactful solutions.<br><br>
+              I was drawn to Oracle APEX by its remarkable versatility, ease of use, and the impressive speed at which applications can be developed. However, my initial journey presented challenges, primarily due to limited readily available support and a smaller community compared to other development platforms. This necessitated a significant amount of independent research and experimentation to overcome obstacles and gain proficiency. Through persistent effort and a proactive approach to problem-solving, I have cultivated a strong understanding of Oracle APEX and now confidently leverage its capabilities to deliver impactful solutions.
             </p>
           </div>
-          <div class="about__skill-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Skills
-            </h3>
-            <ul class="about__skills">
-              <li class="about__skill">Oracle APEX</li>
-              <li class="about__skill">Oracle Cloud</li>
-              <li class="about__skill">PL/SQL</li>
-              <li class="about__skill">SQL</li>
-              <li class="about__skill">html</li>
-              <li class="about__skill">css</li>
-              <li class="about__skill">javascript</li>
-              <li class="about__skill">debugging</li>
-              <li class="about__skill">database design</li>
-              <li class="about__skill">Jasper</li>
-              <li class="about__skill">Oracle Autonomous Database</li>
-              <li class="about__skill">PowerBI</li>
-              <li class="about__skill">AWS</li>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!--
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  -->
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+      
+        <div class="row skills-content skills-animation">
+      
+          <div class="col-lg-6">
+            <ul>
+              <li>Oracle APEX</li>
+              <li>Oracle Cloud</li>
+              <li>Oracle Autonomous Database</li>
+              <li>PL/SQL</li>
+              <li>SQL</li>
             </ul>
           </div>
-        </div>          
-        <h3 class="heading-quaternary about__heading-quaternary">
-          My Certifications:
-        </h3>
-        <p class="text-primary about__text-primary">
-          <span>
-            ⭐Oracle APEX Cloud Developer Certified Professional.<br>
-            ⭐Oracle Cloud Infrastructure Foundations 2021 Associate.<br>
-            ⭐AWS Cloud Practitioner Essentials.<br>
-            ⭐Postman API Fundamentals Student Expert.<br>
-            ⭐SQL (Advanced)- HackerRank.<br>
-            ⭐Oracle Cloud Data Management 2022 Foundations Associate.<br>
-          </span>
+      
+          <div class="col-lg-6">
+            <ul>
+              <li>Jasper Reports</li>
+              <li>MS PowerBI</li>
+              <li>HTML/CSS</li>
+              <li>javascript</li>
+            </ul>
+          </div>
+      
+        </div>
+      
       </div>
-    </div>
-  </section>
-  <section id="projects" class="projects main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> My work life 🛠️</span>
-        <span class="heading-secondary__main">
-          Explore what I do
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="projects__list">
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
+      
+      </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Seeking to leverage my skills in Oracle APEX development to contribute to innovative projects in a dynamic organization, delivering high-quality solutions while advancing my technical expertise.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Oracle APEX developer</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Ponder Solutions, Sri Lanka</em></p>
+              <ul>
+                <li>Led and collaborated with a team of peers to design, develop, and deploy Oracle APEX applications, ensuring timely delivery and adherence to high-quality standards.</li>
+                <li>Integrated third-party services, including payment gateways, via external APIs to enhance application functionality and deliver seamless user experiences. </li>
+                <li>Customized user interfaces using CSS, HTML, and JavaScript, providing tailored and visually appealing applications that met customer requirements.</li>
+                <li>Utilized innovative techniques combining PL/SQL and JavaScript to address Oracle APEX limitations, ensuring optimal performance and feature completeness.</li>
+                <li>Acted as the primary point of contact for customers, conducting requirement-gathering sessions, delivering technical presentations, and training non-technical users on the applications.</li>
+                <li>Managed project proposals, created detailed timelines, and ensured milestones were met through meticulous planning and active participation in all development phases.</li>
+                <li>Designed robust database architectures, including for critical projects like comprehensive insurance portals, leveraging Oracle APEX's features and PL/SQL to create efficient and scalable solutions.</li>
+
+              </ul>
+            </div><!-- Edn Resume Item -->
+<!-- 
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>A brief overview of some of my previous projects. Company names and exact names may have been censored due to privacy and NDA concerns.</p>
+      </div><!-- End Section Title -->
+
+            <div class="container">
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+      
+          <div class="col-lg-6 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <h4>Insurance Web Application</h4>
+              <p>Developed a platform enabling public purchase of third-party insurance and agent issuance of credit-based policies.</p>
+              <p><strong>Outcome:</strong> Enhanced operational efficiency and customer satisfaction for a leading Maldives-based insurance firm.</p>
+              <p><strong>Technologies:</strong> Oracle APEX, SQL, PL/SQL, Jasper</p>
             </div>
-            
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Career Objective
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
+          </div><!-- End Portfolio Item -->
+      
+          <div class="col-lg-6 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <h4>PowerBI Integration with APEX</h4>
+              <p>Created a secure dashboard with advanced user management features, including MFA and user groups.</p>
+              <p><strong>Outcome:</strong> Improved reporting efficiency for a Southeast Asian analytics firm and cost saving from not wanting to buy expensive PowerBI licenses.</p>
+              <p><strong>Technologies:</strong> Oracle APEX, PowerBI, REST APIs</p>
+            </div>
+          </div><!-- End Portfolio Item -->
+      
+          <div class="col-lg-6 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <h4>Integration with Oracle Fusion</h4>
+              <p>Built an application to streamline access management by integrating Oracle Fusion.</p>
+              <p><strong>Outcome:</strong> Reduced manual workflows and ensured compliance for a Middle Eastern hospital.</p>
+              <p><strong>Technologies:</strong> Oracle APEX, Oracle Integration Cloud, PL/SQL</p>
+            </div>
+          </div><!-- End Portfolio Item -->
+      
+          <div class="col-lg-6 col-md-6 portfolio-item">
+            <div class="portfolio-content h-100">
+              <h4>Utility Company User Onboarding</h4>
+              <p>Developed a user onboarding application with a multi-level approval system.</p>
+              <p><strong>Outcome:</strong> Simplified onboarding and improved operational transparency for a Sri Lankan utility company.</p>
+              <p><strong>Technologies:</strong> Oracle APEX, PL/SQL</p>
+            </div>
+          </div><!-- End Portfolio Item -->
+      
+        </div><!-- End Portfolio Container -->
+      </div>
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Seeking to leverage my skills in Oracle APEX development to contribute to innovative projects in a dynamic organization, delivering high-quality solutions while advancing my technical expertise.
-                </span>
-              </p>
+      </div>
 
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>With extensive experience in Oracle APEX and a strong background in database technologies, I offer comprehensive development services that empower businesses with robust, scalable, and high-performing web applications. My expertise spans across various domains, ensuring tailored solutions that align with your business objectives.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Custom Oracle APEX Application Development</a></h4>
+              <p class="description">Design and build modern, scalable, and responsive web applications using Oracle APEX.</p>
             </div>
           </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/imageone.jpg" alt="Project Image" class="projects__list-item-img" />
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Integration Services</a></h4>
+              <p class="description"> Develop and consume APIs to connect with external systems, including payment gateways, CRM, ERP, and analytics platforms.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Database & Backend Development</a></h4>
+              <p class="description">Implement complex business logic, data processing, and automation scripts within Oracle databases.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX Customization & Theming</a></h4>
+              <p class="description">Modify and extend the APEX Universal Theme to match corporate branding and enhance the user experience.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Reporting & Business Intelligence</a></h4>
+              <p class="description">Design and integrate complex reports with custom layouts and dynamic content.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Consultation & Training</a></h4>
+              <p class="description">Provide hands-on training for teams looking to adopt Oracle APEX.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <!--
+    <section id="testimonials" class="testimonials section light-background">
+
+      
+      <div class="container section-title" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+          "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+          "el": ".swiper-pagination",
+          "type": "bullets",
+          "clickable": true
+          },
+          "breakpoints": {
+          "320": {
+            "slidesPerView": 1,
+            "spaceBetween": 40
+          },
+          "1200": {
+            "slidesPerView": 3,
+            "spaceBetween": 1
+          }
+          }
+        }
+        </script>
+        <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+          <h3>Saul Goodman</h3>
+          <h4>Ceo &amp; Founder</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+          <h3>Sara Wilsson</h3>
+          <h4>Designer</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+          <h3>Jena Karlis</h3>
+          <h4>Store Owner</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+          <h3>Matt Brandon</h3>
+          <h4>Freelancer</h4>
+          </div>
+        </div>
+
+        <div class="swiper-slide"></div>
+          <div class="testimonial-item"></div>
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+          <h3>John Larson</h3>
+          <h4>Entrepreneur</h4>
+          </div>
+        </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      </div>
+
+    </section>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to Contact me Using any medium mentioned here...</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>105, Silvervally estate, Koralaima, Gonapola Junction, Sri lanka 12410</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Me</h3>
+                  <p>+94 77 863 0116</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <p>Himeshkaveesha2002@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+<!--
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
               </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Professional Summary
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  Experienced Oracle APEX Developer with 2.5+ years of expertise in designing and developing web applications for diverse industries, including insurance, healthcare, utilities, and analytics. Adept at leading teams, managing project timelines, and delivering cost-effective, high-quality applications on time. Proven track record in integrating enterprise solutions with Oracle APEX and offering advanced features like multi-factor authentication (MFA) and secure PowerBI integration. Recognized for rapid learning, adaptability, and staying current with Oracle APEX trends.
-                </span>
-              </p>
-            </div>
-
+            </form>
           </div>
-        </div>
-        <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-          Work Experience as an Oracle APEX developer
-        </h3>
-        <p class="text-primary about__text-primary">
-          <span>
-            👉	Led and collaborated with a team of peers to design, develop, and deploy Oracle APEX applications, ensuring timely delivery and adherence to high-quality standards.<br><br>
-            🔧	Integrated third-party services, including payment gateways, via external APIs to enhance application functionality and deliver seamless user experiences.<br><br>
-            🖼️	Customized user interfaces using CSS, HTML, and JavaScript, providing tailored and visually appealing applications that met customer requirements.<br><br>
-            💭	Utilized innovative techniques combining PL/SQL and JavaScript to address Oracle APEX limitations, ensuring optimal performance and feature completeness.<br><br>
-            🗣️	Acted as the primary point of contact for customers, conducting requirement-gathering sessions, delivering technical presentations, and training non-technical users on the applications.<br><br>
-            📄	Managed project proposals, created detailed timelines, and ensured milestones were met through meticulous planning and active participation in all development phases.<br><br>
-            🌐	Designed robust database architectures, including for critical projects like comprehensive insurance portals, leveraging Oracle APEX's features and PL/SQL to create efficient and scalable solutions<br><br>
-          </span>
-            <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-              Previous Project overview
-            </h3>
-            <h3 class="heading-quaternary about__heading-quaternary">
-              Insurance Web Application
-            </h3>
-            <p class="text-primary about__text-primary">
-              <span>
-                Developed a platform enabling public purchase of third-party insurance and agent issuance of credit-based policies.<br>
-                <b>Outcome:</b> Enhanced operational efficiency and customer satisfaction for a leading Maldives-based insurance firm.<br>
-                <b>Technologies:</b> Oracle APEX, SQL, PL/SQL, Jasper.
-              </span>
-              <h3 class="heading-quaternary about__heading-quaternary">
-                PowerBI Integration with APEX
-              </h3>
-              <p class="text-primary about__text-primary">
-                <span>
-                  Created a secure dashboard with advanced user management features, including MFA and user groups.<br>
-                  <b>Outcome:</b>  Improved reporting efficiency for a Southeast Asian analytics firm. and cost saving from not wanting to buy expensive PowerBI licenses<br>
-                  <b>Technologies:</b> Oracle APEX, PowerBI, REST APIs.
-                </span>            
-                <h3 class="heading-quaternary about__heading-quaternary">
-                  Integration with Oracle Fusion
-                </h3>
-                <p class="text-primary about__text-primary">
-                  <span>
-                    Built an application to streamline access management by integrating Oracle Fusion.<br>
-                    <b>Outcome:</b> Reduced manual workflows and ensured compliance for a Middle Eastern hospital.<br>
-                    <b>Technologies:</b> Oracle APEX, Oracle Intergration Cloud, PL/SQL.
-                  </span>
-                  <h3 class="heading-quaternary about__heading-quaternary">
-                    Utility Company User Onboarding
-                  </h3>
-                  <p class="text-primary about__text-primary">
-                    <span>
-                      Developed a user onboarding application with a multi-level approval system.<br>
-                      <b>Outcome:</b> Simplified onboarding and improved operational transparency for a Sri Lankan utility company.<br>
-                      <b>Technologies:</b> Oracle APEX, PL/SQL.
-                    </span>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary">
-        <span class="heading-secondary__sm"> Contact 📞</span>
-        <span class="heading-secondary__main">
-          Feel free to Contact me Using any medium mentioned here...
-        </span>
-      </h2> 
-       <p class="text-primary about__text-primary"> <br><br>
-        <a href="mailto:your_email@example.com">📧 himeshkaveesha2002@gmail.com</a> <br>
-        <a href="tel:+94771234567">📞 +94 77 863 0116</a><br>
-        <a href="https://www.linkedin.com/in/himesh-kaveesha-kariyawasam-1b791b206/" target="_blank">💼 My LinkedIn</a> <br>
-        🏠 105, Silvervally Estate, Korlaima, Gonapola, Sri lanka (12410)
-      </p>
-    </div>
-    </div>
-  </section>
-  <footer class="main-footer">
-    <div class="main-footer__upper">
-      <div class="main-container">
-        <ul class="main-footer__links">
-          <li class="main-footer__link">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#about">About</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#projects">My work Life</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-        <div class="main-footer__mid-line"></div>
-        <div class="main-footer__socials">
 
-          <a href="https://www.instagram.com/__himesh_kaveesha__/" class="main-footer__social-link">
-            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/himesh-kaveesha-kariyawasam-1b791b206/" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
         </div>
+
+      </div>
+
+    </section> /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
       </div>
     </div>
-    <div class="main-footer__bottom">
-      <div class="main-container">
-        <p class="main-footer__bottom-txt">
-          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
-          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
-          <script>document.write(new Date().getFullYear())</script>. Made by
-          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
-        </p>
-      </div>
-    </div>
+
   </footer>
-  <script src="./script.js"></script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
